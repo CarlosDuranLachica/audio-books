@@ -15,6 +15,6 @@
 
 /* Investigar */
 /* clase que apareco al hacer deploy y rompe los margenes */
-.MuiFormControl-root {
+div .MuiFormControl-root {
     margin: 8px 2% 8px 0;
 }
