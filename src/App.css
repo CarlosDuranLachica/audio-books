@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration:none;
+  outline: none;
+}
+
+h1 {
+  color: #426696;
+  font-weight: 600;
+  font-size: 3rem;
+  opacity: 0.8;
+}
+h2,
+p {
+  color: #658ec6;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+h3,h4 {
+  color: #426696;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column{
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.justify{
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+main {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+  background: linear-gradient(to right top, #65dfc9, #6cdbeb);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo{
+  width: 7rem;
+  position: absolute;
+  top: 25px;
+  left: 30px;
+}
+
+.Decoration1,
+.Decoration2 {
+  width: 35rem;
+  position: fixed;
+}
+
+.Decoration1 {
+  top: 1%;
+  right: 0;
+}
+.Decoration2 {
+  top: 20%;
+  left: 0;
+}
+
+.glass {
+  background: white;
+  min-height: 80vh;
+  width: 70%;
+  margin: 5% auto;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.5),
+    rgba(255, 255, 255, 0.2)
+  );
+  border-radius: 2rem;
+  z-index: 2;
+  backdrop-filter: blur(2rem);
+  display: flex;
+  flex-direction: column;
+}
