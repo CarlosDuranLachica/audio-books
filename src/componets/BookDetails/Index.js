@@ -62,7 +62,16 @@ const Index = ({ match }) => {
     if (match.params.id) {
       const id = match.params.id;
       dispatch(
-        EditarBooks({ titulo, URL, autor, narrador, original, duracion, costo, id})
+        EditarBooks({
+          titulo,
+          URL,
+          autor,
+          narrador,
+          original,
+          duracion,
+          costo,
+          id,
+        })
       );
     } else if (view === "Nuevo Libro") {
       dispatch(
@@ -107,6 +116,7 @@ const Index = ({ match }) => {
               }}
             />
             <TextField
+              className={classes.normal}
               id="outlined-secondary"
               label="Autor:"
               variant="outlined"
@@ -117,6 +127,7 @@ const Index = ({ match }) => {
               }}
             />
             <TextField
+              className={classes.normal}
               id="outlined-secondary"
               label="Narrador:"
               variant="outlined"
@@ -127,6 +138,7 @@ const Index = ({ match }) => {
               }}
             />
             <TextField
+              className={classes.normal}
               type="number"
               id="outlined-secondary"
               label="Duracion:"
@@ -138,6 +150,7 @@ const Index = ({ match }) => {
               }}
             />
             <TextField
+              className={classes.normal}
               type="number"
               id="outlined-secondary"
               label="Costo:"
@@ -195,22 +208,21 @@ const Index = ({ match }) => {
             <div
               style={{ display: "inline-flex", justifyContent: "space-around" }}
             >
-              
-                <Button
-                  onClick={() => {
-                    guardar();
-                  }}
-                  variant="outlined"
-                  color="primary"
-                  style={{
-                    padding: "17px 14px",
-                    backgroundColor: "rgba(2, 152, 252, 0.5)",
-                    fontSize: "0.7rem",
-                    fontWeight: "bold",
-                  }}
-                >
-                  Guardar
-                </Button>
+              <Button
+                onClick={() => {
+                  guardar();
+                }}
+                variant="outlined"
+                color="primary"
+                style={{
+                  padding: "17px 14px",
+                  backgroundColor: "rgba(2, 152, 252, 0.5)",
+                  fontSize: "0.7rem",
+                  fontWeight: "bold",
+                }}
+              >
+                Guardar
+              </Button>
               <Link to="/Home">
                 <Button
                   variant="outlined"
