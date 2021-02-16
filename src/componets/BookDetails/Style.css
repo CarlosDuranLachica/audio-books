@@ -12,3 +12,9 @@
     padding: 2rem;
     box-shadow: 6px 6px 20px rgb(122 122 122 / 21%);
 }
+
+/* Investigar */
+/* clase que apareco al hacer deploy y rompe los margenes */
+.MuiFormControl-root {
+    margin: 8px 2% 8px 0;
+}

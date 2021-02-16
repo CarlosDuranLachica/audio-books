@@ -8,10 +8,6 @@ export const useStyles = makeStyles((theme: Theme) =>
         width: "48%",
       },
     },
-    normal: {
-        margin: "8px 2% 8px 0",
-        width: "48%",
-    },
     allLine: {
       width: "98%",
     },
