@@ -229,10 +229,8 @@ const Index = ({ match }) => {
       </div>
 
       <img
-        className="container col-sm-3"
+        className="container imgContainer col-sm-6 col-md-3"
         src={URL === "" ? imgprueba : URL}
-        width="20%"
-        height="300px"
         alt=""
       />
     </div>

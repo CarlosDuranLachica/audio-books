@@ -1,20 +1,30 @@
 .details-form {
-    margin: 5rem auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
-.container{
-    background: linear-gradient( to left top, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2) );
-    border-radius: 1rem;
-    margin: 1rem 0rem;
-    padding: 2rem;
-    box-shadow: 6px 6px 20px rgb(122 122 122 / 21%);
+.container {
+  background: linear-gradient(
+    to left top,
+    rgba(255, 255, 255, 0.4),
+    rgba(255, 255, 255, 0.2)
+  );
+  border-radius: 1rem;
+  margin: 1rem 0rem;
+  padding: 2rem;
+  box-shadow: 6px 6px 20px rgb(122 122 122 / 21%);
+}
+
+.imgContainer {
+  width: 20%;
+  min-width: 200px;
+  height: 300px;
 }
 
 /* Investigar */
 /* clase que apareco al hacer deploy y rompe los margenes */
 div .MuiFormControl-root {
-    margin: 8px 2% 8px 0;
+  margin: 8px 2% 8px 0;
 }
