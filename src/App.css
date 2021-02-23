@@ -1,4 +1,4 @@
-*, a{
+*, a, p{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,6 +12,7 @@ h1 {
   font-size: 3rem;
   opacity: 0.8;
 }
+
 h2,
 p {
   color: #658ec6;

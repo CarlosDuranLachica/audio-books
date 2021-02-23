@@ -54,7 +54,7 @@ const Index = () => {
       <div className="cards">
         {Data ? (
           Data.map((Books, index) => (
-            <div key={index} className="Card flex-row">
+            <div key={index} className="Card flex-row center">
               <img className="m-auto m-sm-0" src={Books.fields.cover["es-MX"]} alt="actor" />
               <div className="details flex-column">
                 <h3>{Books.fields.title["es-MX"]}</h3>
