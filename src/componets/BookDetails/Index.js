@@ -148,7 +148,7 @@ const Index = ({ match }) => {
                 setCosto(e.target.value);
               }}
             />
-            <FormControl className={classes.boxCheck} component="fieldset">
+            <FormControl component="fieldset">
               <FormLabel component="legend">¿Es original?</FormLabel>
               <RadioGroup
                 aria-label="gender"

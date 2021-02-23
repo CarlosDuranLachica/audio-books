@@ -16,9 +16,6 @@ export const useStyles = makeStyles((theme: Theme) =>
       display: "inline-flex",
       justifyContent: "space-around",
     },
-    boxCheck: {
-      width: "35%",
-    },
     check: {
       "&:hover": {
         backgroundColor: "transparent",
