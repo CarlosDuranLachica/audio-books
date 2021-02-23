@@ -79,8 +79,8 @@ const Index = ({ match }) => {
   };
   const classes = useStyles();
   return (
-    <div className="details-form flex-row">
-      <div style={{ width: "60%" }}>
+    <div className="details-form flex-row col-11 col-sm-10">
+      <div className="col-sm-8 col-md-6">
         <h1>{view}</h1>
         <div className="container">
           <form className={classes.root} noValidate autoComplete="off">
@@ -148,7 +148,7 @@ const Index = ({ match }) => {
                 setCosto(e.target.value);
               }}
             />
-            <FormControl component="fieldset">
+            <FormControl className={classes.boxCheck} component="fieldset">
               <FormLabel component="legend">¿Es original?</FormLabel>
               <RadioGroup
                 aria-label="gender"
@@ -192,10 +192,7 @@ const Index = ({ match }) => {
                 />
               </RadioGroup>
             </FormControl>
-            <div
-              style={{ display: "inline-flex", justifyContent: "space-around" }}
-            >
-              
+            <div className={classes.boxButton}>
                 <Button
                   onClick={() => {
                     guardar();
@@ -203,6 +200,7 @@ const Index = ({ match }) => {
                   variant="outlined"
                   color="primary"
                   style={{
+                    marginRight:"10px",
                     padding: "17px 14px",
                     backgroundColor: "rgba(2, 152, 252, 0.5)",
                     fontSize: "0.7rem",
@@ -231,7 +229,7 @@ const Index = ({ match }) => {
       </div>
 
       <img
-        className="container"
+        className="container col-sm-3"
         src={URL === "" ? imgprueba : URL}
         width="20%"
         height="300px"

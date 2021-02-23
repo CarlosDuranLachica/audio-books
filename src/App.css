@@ -1,4 +1,4 @@
-* {
+*, a{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -65,12 +65,20 @@ main {
   position: absolute;
   top: 25px;
   left: 30px;
+  filter: drop-shadow(2px 4px 6px black);
+}
+
+.Decoration{
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  position: fixed;
 }
 
 .Decoration1,
 .Decoration2 {
   width: 35rem;
-  position: fixed;
+  position: absolute;
 }
 
 .Decoration1 {
@@ -78,14 +86,13 @@ main {
   right: 0;
 }
 .Decoration2 {
-  top: 20%;
+  bottom: -100px;
   left: 0;
 }
 
 .glass {
   background: white;
   min-height: 80vh;
-  width: 70%;
   margin: 5% auto;
   background: linear-gradient(
     to right bottom,

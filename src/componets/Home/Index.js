@@ -12,6 +12,15 @@ import {
   BuscarBooks,
 } from "../Redux/Reducers/BooksReducer";
 
+function millisToMinutesAndSeconds(millis) {
+  var minutes = Math.floor(millis / 60000);
+  var seconds = ((millis % 60000) / 1000).toFixed(0);
+  return minutes + ":" + (seconds < 10 ? '0' : '') + seconds;
+}
+
+
+
+
 const Index = () => {
   const dispatch = useDispatch();
   const Data = useSelector((store) => store.DataBooks.Details);
@@ -25,11 +34,8 @@ const Index = () => {
       dispatch(BuscarBooks(Buscar));
     }
   }, [Buscar]);
-  /* if (Data !== null) {
-        return <Redirect to="/Details" />
-    } */
   return (
-    <div className="books">
+    <div className="books col-11 col-sm-10">
       <div className="status">
         <h1>Books</h1>
         <Link to="/BookDetails">
@@ -48,17 +54,17 @@ const Index = () => {
       <div className="cards">
         {Data ? (
           Data.map((Books, index) => (
-            <div key={index} className="card">
-              <img src={Books.fields.cover["es-MX"]} alt="actor" />
+            <div key={index} className="Card flex-row">
+              <img className="m-auto m-sm-0" src={Books.fields.cover["es-MX"]} alt="actor" />
               <div className="details flex-column">
                 <h3>{Books.fields.title["es-MX"]}</h3>
-                <div className="flex-column">
+                <div className="flex-column col-sm-6">
                   <div>
                     <p>Autor: {Books.fields.authors["es-MX"]}</p>
                     <p>Narrador: {Books.fields.narrators["es-MX"]}</p>
                   </div>
                   <div className="flex-row justify">
-                    <h4>Tiempo: {Books.fields.duration["es-MX"]}</h4>
+                    <h4>Tiempo: {millisToMinutesAndSeconds( Books.fields.duration["es-MX"])}</h4>
                     <h4>${Books.fields.cost_per_play["es-MX"]}</h4>
                   </div>
                 </div>

@@ -1,5 +1,5 @@
 .details-form {
-    margin: 5rem;
+    margin: 5rem auto;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;

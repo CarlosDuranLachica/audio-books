@@ -2,6 +2,7 @@ import React from "react";
 import { costs, plays } from "./tech_test_jr.json";
 
 function Costo() {
+    /* https://www.notion.so/Junior-Pair-Programming-Test-4500a9e6ac5e4a00b5f08d5a4f821501 */
     var CostoTotalLibro = 0;
     var CostoTotal = 0;
     costs.map((itemC) => {
